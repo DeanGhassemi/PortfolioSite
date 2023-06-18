@@ -17,17 +17,19 @@
       href="https://fonts.googleapis.com/css2?family=Dosis&family=Tangerine&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <section class="container">
       <div id="navbar">
         <nav>
           <ul>
-            <li class="nav-items">Home</li>
-            <li class="nav-items">About</li>
-            <li class="nav-items">Work Experience</li>
-            <li class="nav-items">Projects</li>
-            <li class="nav-items">Contact</li>
+            <li class="nav-items"><a href="#home">Home</a></li>
+            <li class="nav-items"><a href="#about">About</a></li>
+            <li class="nav-items"><a href="#work">Work Experience</a></li>
+            <li class="nav-items"><a href="#projects">Projects</a></li>
+            <li class="nav-items"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -45,19 +47,19 @@
           A software development student interested in Application Development
           and Backend Development. I am currently learning
           <strong>Oracle</strong>, <strong>JavaScript</strong>,
-          <strong>jQuery</strong>, and lastly <strong>AngularJS</strong>. I am
-          expected of graduate in April of 2025.
+          <strong>jQuery</strong>, and lastly <strong>AngularJS</strong>. My
+          expected graduation is in April of 2025.
         </p>
       </div>
     </section>
     <section class="container">
       <div id="experience">
         <h1>Work Experience</h1>
-        <div id="soft?????">
+        <div class="work-item">
           <h3>Upcoming Co-op @ Mystery, Oakville ON</h3>
           <p>Upcoming details about the position</p>
         </div>
-        <div id="?????flowers">
+        <div class="work-item">
           <h3>Upcoming Contract @ Mystery, Mississauga ON</h3>
           <p>Upcoming details about the position</p>
         </div>
@@ -65,13 +67,42 @@
     </section>
     <section class="container">
       <div id="projects">
-        <h1>My Projects (New projects on their way)</h1>
-        <h3>Progressive Overload</h3>
-        <i>Exposure Projects (React, Node.js, ExpressJS, MongoDB)</i>
-        <p>A fitness web app designed to act as a log book</p>
-        <h3>Progressive Overload</h3>
-        <i>Exposure Projects (React, Node.js, ExpressJS, MongoDB)</i>
-        <p>A fitness web app designed to act as a log book</p>
+        <h1>My Projects</h1>
+        <div class="project-item">
+          <h3>Progressive Overload</h3>
+          <i>Exposure Project (React, Node.js, ExpressJS, MongoDB)</i>
+          <p>A fitness web app designed to act as a log book</p>
+        </div>
+        <div class="project-item">
+          <h3>Issue Tracker</h3>
+          <i>Final Project for Object-Oriented Java 2 (Java, JavaFX, CSS)</i>
+          <p>A desktop application to mimic a ticket system for reporting bugs, exploits, etc</p>
+        </div>
+        <div class="project-item">
+          <h3>Grand Theft Advice</h3>
+          <i>Front-end Developer - Hackville 2022 Submission (HTML, CSS, Bootstrap, ASP.NET, Figma)</i>
+          <p>A web app to aid high school students in Ontario with their transition into post-secondary</p>
+        </div>
+        <div class="project-item">
+          <h3>Image Processing</h3>
+          <i>High School Project (C#.NET, WinForms)</i>
+          <p>A desktop application to manipulate images by applying filters such as blur, and pixelate</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div id="contact">
+        <div id="contact-left">
+          <h1>Contact Me</h1>
+          <p>deanghassemi@gmail.com</p>
+        </div>
+        <div id="contact-right">
+          <form>
+            <input type="text", id="fname" name="fname" placeholder="Your Name">
+            <input type="email", id="email" name="email" placeholder="Your Email">
+            <textarea id="message "name="message" rows="6" placeholder="Your Message"></textarea>
+          </form>
+        </div>
       </div>
     </section>
   </body>

@@ -1,4 +1,11 @@
-/* For Mobile */
-@media only screen and (max-width: 600px){
+/* Dark Mode */
+@media screen and (prefers-color-scheme: dark) {
+    *{
+        color: #fff;
+    }
+    /* For Mobile */
+    @media  screen and (max-width: 600px){
     
+    }
 }
+
