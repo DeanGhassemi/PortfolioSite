@@ -1,11 +1,13 @@
 /* Dark Mode */
-@media screen and (prefers-color-scheme: dark) {
-    *{
-        color: #fff;
-    }
-    /* For Mobile */
-    @media  screen and (max-width: 600px){
-    
-    }
+body{
+    color: black;
+    background-color: white;
 }
-
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+/* For Mobile */
+@media  screen and (max-width: 600px){
+    
+}
