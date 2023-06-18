@@ -1,5 +1,7 @@
 /* Dark Mode */
 body{
+    margin: 0px;
+    padding: 0px;
     color: black;
     background-color: white;
 }
@@ -8,6 +10,29 @@ body{
     color: white;
 }
 /* For Mobile */
-@media  screen and (max-width: 600px){
-    
+@media screen and (max-width: 600px){
+    .container{
+        margin: auto;
+    }
+    .nav-con{
+        overflow: hidden;
+        position: relative;
+    }
+    .nav-con > #nav{
+        display: none;
+    }
+    .nav-con > a{
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .active{
+        background-color: #04AA6D;
+    }
 }

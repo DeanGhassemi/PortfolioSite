@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Dean's Personal Site</title>
@@ -19,42 +18,45 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <section class="container">
-      <div id="navbar">
-        <nav>
-          <ul>
-            <li class="nav-items"><a href="#home">Home</a></li>
-            <li class="nav-items"><a href="#about">About</a></li>
-            <li class="nav-items"><a href="#work">Work Experience</a></li>
-            <li class="nav-items"><a href="#projects">Projects</a></li>
-            <li class="nav-items"><a href="#contact">Contact</a></li>
-            <li class="nav-items"><button onclick="toggleDarkMode()">Toggle dark mode</button></li>
-          </ul>
-        </nav>
+    <section id="navbar">
+      <div class="container nav-con">
+        <a href="#home" class="active">Home</a>
+        <div id="nav">
+          <a href="#about">About</a>
+          <a href="#work">Work Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button onclick="toggleDarkMode()">Toggle dark mode</button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="displayNav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </section>
-    <section class="container">
-      <div id="home">
+    <section id="home">
+      <div class="container">
         <h1>Hello, My name is Dean Ghassemi</h1>
         <p>Software Development Student @ Sheridan College</p>
       </div>
     </section>
-    <section class="container">
-      <div id="about">
+    <section id="about">
+      <div class="container">
         <h1>About Me</h1>
         <p>
           A software development student interested in Application Development
-          and Backend Development. I am currently learning
-          <strong>Oracle</strong>, <strong>JavaScript</strong>,
-          <strong>jQuery</strong>, and lastly <strong>AngularJS</strong>. My
-          expected graduation is in April of 2025.
+          and Backend Development. I am second year and second semester student
+          in a three year program. My expected graduation is in April of 2025.
         </p>
       </div>
     </section>
-    <section class="container">
-      <div id="experience">
+    <section id="experience">
+      <div class="container">
         <h1>Work Experience</h1>
         <div class="work-item">
           <h3>Upcoming Co-op @ Mystery, Oakville ON</h3>
@@ -66,8 +68,8 @@
         </div>
       </div>
     </section>
-    <section class="container">
-      <div id="projects">
+    <section id="projects">
+      <div class="container">
         <h1>My Projects</h1>
         <div class="project-item">
           <h3>Progressive Overload</h3>
@@ -77,31 +79,60 @@
         <div class="project-item">
           <h3>Issue Tracker</h3>
           <i>Final Project for Object-Oriented Java 2 (Java, JavaFX, CSS)</i>
-          <p>A desktop application to mimic a ticket system for reporting bugs, exploits, etc</p>
+          <p>
+            A desktop application to mimic a ticket system for reporting bugs,
+            exploits, etc
+          </p>
         </div>
         <div class="project-item">
           <h3>Grand Theft Advice</h3>
-          <i>Front-end Developer - Hackville 2022 Submission (HTML, CSS, Bootstrap, ASP.NET, Figma)</i>
-          <p>A web app to aid high school students in Ontario with their transition into post-secondary</p>
+          <i
+            >Front-end Developer - Hackville 2022 Submission (HTML, CSS,
+            Bootstrap, ASP.NET, Figma)</i
+          >
+          <p>
+            A web app to aid high school students in Ontario with their
+            transition into post-secondary
+          </p>
         </div>
         <div class="project-item">
           <h3>Image Processing</h3>
           <i>High School Project (C#.NET, WinForms)</i>
-          <p>A desktop application to manipulate images by applying filters such as blur, and pixelate</p>
+          <p>
+            A desktop application to manipulate images by applying filters such
+            as blur, and pixelate
+          </p>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div id="contact">
+    <section id="contact">
+      <div class="container">
         <div id="contact-left">
           <h1>Contact Me</h1>
           <p>deanghassemi@gmail.com</p>
         </div>
         <div id="contact-right">
           <form>
-            <input type="text", id="fname" name="fname" placeholder="Your Name">
-            <input type="email", id="email" name="email" placeholder="Your Email">
-            <textarea id="message "name="message" rows="6" placeholder="Your Message"></textarea>
+            <input
+              type="text"
+              ,
+              id="fname"
+              name="fname"
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              ,
+              id="email"
+              name="email"
+              placeholder="Your Email"
+            />
+            <textarea
+              id="message "
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
           </form>
         </div>
       </div>
